@@ -1,0 +1,85 @@
+*, p, li a:hover, input:focus {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;;
+    background-color: #1E394C;
+}
+
+header {
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 50px;
+    padding: 0 14%;
+    background-color: #1E394C;
+}
+
+.logoContainer {
+    width: 15%;
+    border: 2px solid red;
+}
+
+.logoContainer > img {
+    width: 90%;
+}
+
+.searchBoxContainer {
+    width: 30%;
+    height: 32px;
+    border-radius: 50px;
+    padding-left: 10px;
+    background-color: #345367;
+}
+
+.searchBoxContainer > input {
+    width: 95%;
+    color: #fff;
+    font-size: .8em;
+    border-radius: 50px;
+    padding-left: 10px;
+    background-color: #345367;
+    border: 1px solid #1e394c3d;
+}
+
+.searchBoxContainer:focus {
+    outline: none;
+}
+
+.searchBoxContainer ::placeholder {
+    color: #fff;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: red;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+.searchBoxContainer > img {
+    width: 14px;
+}
+
+.topNavContainer {
+    width: 50%;
+    border: 2px solid red;
+}
+
+.topNavContainer ul li a {
+    color: #fff;
+    font-size: .8em;
+    padding: 10px 20px;
+    border: 1px solid rebeccapurple;
+}
