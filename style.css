@@ -1,85 +1,244 @@
-*, p, li a:hover, input:focus {
-    box-sizing: border-box;
+*, p, ul, li, a:hover, input:focus {
     margin: 0;
     padding: 0;
     outline: none;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul li a:hover {
+    text-decoration: none;
 }
 
 body {
     width: 100%;
-    font-family: 'Roboto', sans-serif;;
-    background-color: #1E394C;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid red; */
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px #000000e5;
 }
 
-.mainHeader {
+.topHeader {
     width: 100%;
-    height: 50px;
-    padding: 0 14%;
+    height: 60px;
+    padding: 0 10%;
     background-color: #1E394C;
 }
 
 .logoContainer {
-    width: 15%;
-    border: 2px solid red;
+    width: 20%;
+    margin: auto;
+    /* border: 1px solid red; */
 }
 
-.logoContainer > img {
-    width: 90%;
+.logoContainer > a > img {
+    width: 60%;
 }
 
 .searchBoxContainer {
-    width: 30%;
-    height: 32px;
-    border-radius: 50px;
-    padding-left: 10px;
-    background-color: #345367;
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid red; */
 }
 
-.searchBoxContainer > input {
-    width: 95%;
+.searchBox {
+    width: 60%;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.searchBox > input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.searchBox > input {
+    width: 100%;
     color: #fff;
     font-size: .8em;
-    border-radius: 50px;
-    padding-left: 10px;
+    border-radius: 5px;
+    padding: 0 2% 0 10%;
+    letter-spacing: 1.5px;
     background-color: #345367;
     border: 1px solid #1e394c3d;
 }
 
-.searchBoxContainer:focus {
+.searchBox:focus {
     outline: none;
+    color: #ffffff;
 }
 
-.searchBoxContainer ::placeholder {
-    color: #fff;
+.searchBox ::placeholder {
+    color: #F8F0E3;
 }
 
 ::-webkit-input-placeholder { /* Edge */
-    color: red;
+    color: #F8F0E3;
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
+    color: #F8F0E3;
 }
 
-.searchBoxContainer > img {
-    width: 14px;
+.searchBox > img {
+    top: 0;
+    left: 7%;
+    width: 12px;
+    position: relative;
 }
 
-.topNavContainer {
+.topHeader nav {
+    width: 20%;
+    /* border: 1px solid red; */
+}
+
+.topHeader nav ul {
+    width: 100%;
+    height: 100%;
+}
+
+.topHeader nav ul li a {
+    font-size: .9em;
+    color: #ffffff;
+    padding: 8px 12px;
+}
+
+.topHeader nav ul li a:hover {
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #345367;
+}
+
+button, .signupBtn {
+    border: none;
+    border-radius: 4px;
+    background-color: #599C2B;
+}
+
+.signupBtn:hover {
+    color: #ffffff;
+    background-color: #3C8224 !important;
+}
+
+.bottomHeader {
+    width: 100%;
+    height: 40px;
+    padding: 0 10%;
+    background-color: #ffffff;
+}
+
+.bottomHeader nav {
+    width: 100%;
+}
+
+.bottomHeader nav ul li a {
+    font-size: .9em;
+    color: #151515;
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+
+.bottomHeader nav ul li a:hover {
+    color: #151515;
+    padding: 9px 0px;
+    border-bottom: .1em solid #345367;
+}
+
+/* dropdown select starts here */
+
+.bottomHeader nav ul li select {
+    border: none;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+/* hero starts here */
+
+.hero {
+    width: 100%;
+    height: 52.5vh;
+    padding: 0 10%;
+    background-color: #FF7300;
+}
+
+.heroTexts {
     width: 50%;
-    border: 2px solid red;
+    padding-right: 10%;
 }
 
-.topNavContainer ul li a {
-    color: #fff;
-    font-size: .8em;
-    padding: 10px 20px;
-    border: 1px solid rebeccapurple;
+.heroTexts h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.heroTexts h4 {
+    font-size: 1em;
+}
+
+.heroTexts > .greenBtn {
+    border-radius: 5px;
+    background-color: #3C8224;
+    box-shadow: 0px 0px 4px #00000031;
+}
+
+.heroTexts > .greenBtn a {
+    font-size: .9em;
+    color: #ffffff;
+}
+
+.heroTexts > .greenBtn:hover {
+    background-color: #599C2B;
+}
+
+.heroTexts > .whiteBtn {
+    background-color: #ffffff;
+}
+
+.heroTexts > .whiteBtn a {
+    font-size: .9em;
+    font-weight: 500;
+    color: #3C8224;
+}
+
+.heroTexts > .whiteBtn:hover {
+    background-color: #F8F0E3;
+}
+
+.heroPhotos {
+    width: 50%;
+}
+
+.heroPhotos > img {
+    width: 100%;
+}
+
+/* content section starts here  */
+
+.contentContainer {
+    width: 100%;
+    padding: 0 10%;
+    border: 1px solid red;
+}
+
+.contentContainer > h4 {
+    font-size: 1em;
+    padding: 20px 0 12px;
+    margin: 0;
+}
+
+.firstRow > a {
+    width: 23%;
+    height: 150px;
+    border: 1px solid red;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
 }
